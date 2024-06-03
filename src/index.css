@@ -1,0 +1,14 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+.nav-link {
+  @apply text-gray-700 hover:text-gray-900;
+}

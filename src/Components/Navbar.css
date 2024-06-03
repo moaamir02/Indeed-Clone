@@ -1,0 +1,32 @@
+
+
+
+
+/* src/components/Footer.css */
+.nav-link {
+  position: relative;
+  color: #4a5568; /* Tailwind's gray-700 color */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #1a202c; /* Tailwind's gray-900 color */
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  background: blue;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
