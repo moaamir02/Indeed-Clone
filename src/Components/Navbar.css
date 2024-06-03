@@ -1,32 +1,33 @@
-
-
-
-
 /* src/components/Footer.css */
+
+/* Styling for navigation links */
 .nav-link {
-  position: relative;
-  color: #4a5568; /* Tailwind's gray-700 color */
-  transition: color 0.3s ease;
+  position: relative; /* Make the position relative for pseudo-element positioning */
+  color: #4a5568; /* Set the default text color to Tailwind's gray-700 color */
+  transition: color 0.3s ease; /* Smooth transition for text color change */
 }
 
+/* Styling for navigation links on hover */
 .nav-link:hover {
-  color: #1a202c; /* Tailwind's gray-900 color */
+  color: #1a202c; /* Change text color to Tailwind's gray-900 color on hover */
 }
 
+/* Styling for the pseudo-element that creates the underline effect */
 .nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  display: block;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: -2px;
-  background: blue;
-  transition: width 0.3s ease, background-color 0.3s ease;
+  content: ''; /* Add an empty content to the pseudo-element */
+  position: absolute; /* Position the pseudo-element relative to its parent */
+  width: 0; /* Initially, set the width of the pseudo-element to 0 */
+  height: 2px; /* Set the height of the pseudo-element to create the underline effect */
+  display: block; /* Make the pseudo-element a block-level element */
+  margin: auto; /* Center the pseudo-element horizontally */
+  left: 0; /* Align the pseudo-element to the left */
+  right: 0; /* Align the pseudo-element to the right */
+  bottom: -2px; /* Position the pseudo-element just below the text */
+  background: blue; /* Set the background color of the pseudo-element to blue */
+  transition: width 0.3s ease, background-color 0.3s ease; /* Smooth transition for width and background-color */
 }
 
+/* Styling for the pseudo-element when its parent link is hovered */
 .nav-link:hover::after {
-  width: 100%;
+  width: 100%; /* Expand the width of the pseudo-element to create the underline effect on hover */
 }

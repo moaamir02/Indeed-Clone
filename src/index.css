@@ -1,14 +1,17 @@
-/* src/index.css */
+/* 
+   Tailwind CSS base, components, and utilities
+*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Resetting default body styles */
 body {
   padding: 0;
   margin: 0;
 }
 
-
+/* Styling for navigation links */
 .nav-link {
   @apply text-gray-700 hover:text-gray-900;
 }

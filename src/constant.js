@@ -1,3 +1,4 @@
+// Array of companies with their name, reviews, rating, and logo URL
 const companies = [
   {
     name: "Bajaj Allianz Life Insurance",
